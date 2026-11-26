@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil | Web em Foco</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/perfil.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="brand" href="../index.html">Web em <span>Foco</span></a>
+            <div class="controls" aria-label="Controles de acessibilidade">
+                <button type="button" onclick="AumentarFonte()" aria-label="Aumentar tamanho da fonte">A+</button>
+                <button type="button" onclick="DiminuirFonte()" aria-label="Diminuir tamanho da fonte">A-</button>
+                <button type="button" onclick="ToggleContraste()" aria-label="Alternar alto contraste">Contraste🎨</button>
+                <button type="button" onclick="LerPagina()" aria-label="Ler esta página">Ouvir🎤</button>
+                <button type="button" onclick="PararLeitura()" aria-label="Parar leitura">Parar🛑</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav aria-label="Menu principal">
+            <a href="../index.html">Início</a>
+            <a href="conteudo.html">Conteúdo</a>
+            <a href="atividades.html">Atividades</a>
+            <a class="active" href="perfil.html" aria-current="page">Perfil</a>
+        </nav>
+
+        <main>
+            <section class="profile-card">
+                <div class="avatar" aria-label="Avatar do desenvolvedor">DV</div>
+                <div>
+                    <p class="eyebrow">Desenvolvedor do projeto</p>
+                    <h1>Diogo Vieira da Silva</h1>
+                    <p>Estudante e entusiasta de tecnologia com interesse em desenvolvimento web, acessibilidade digital e interfaces claras para diferentes públicos.</p>
+                </div>
+            </section>
+
+            <section class="profile-grid" aria-label="Informações do desenvolvedor">
+                <article>
+                    <h2>Formação e interesses</h2>
+                    <p>Sou estudante com interesse em desenvolvimento de software, especialmente na construção de páginas web responsivas e acessíveis.</p>
+                </article>
+                <article>
+                    <h2>Conhecimentos</h2>
+                    <ul>
+                        <li>HTML semântico</li>
+                        <li>CSS responsivo</li>
+                        <li>JavaScript</li>
+                        <li>Acessibilidade web</li>
+                    </ul>
+                </article>
+                <article class="wide">
+                    <h2>Sobre este projeto</h2>
+                    <p>O site Web em Foco foi desenvolvido como atividade prática para integrar HTML, CSS e JavaScript em um projeto organizado. Ele reúne uma página inicial, conteúdo educativo, uma atividade interativa e este perfil do desenvolvedor.</p>
+                </article>
+            </section>
+        </main>
+    </div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

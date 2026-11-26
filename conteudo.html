@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdo | Web em Foco</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/conteudo.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="brand" href="../index.html">Web em <span>Foco</span></a>
+            <div class="controls" aria-label="Controles de acessibilidade">
+                <button type="button" onclick="AumentarFonte()" aria-label="Aumentar tamanho da fonte">A+</button>
+                <button type="button" onclick="DiminuirFonte()" aria-label="Diminuir tamanho da fonte">A-</button>
+                <button type="button" onclick="ToggleContraste()" aria-label="Alternar alto contraste">Contraste🎨</button>
+                <button type="button" onclick="LerPagina()" aria-label="Ler esta página">Ouvir🎤</button>
+                <button type="button" onclick="PararLeitura()" aria-label="Parar leitura">Parar🛑</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav aria-label="Menu principal">
+            <a href="../index.html">Início</a>
+            <a class="active" href="conteudo.html" aria-current="page">Conteúdo</a>
+            <a href="atividades.html">Atividades</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+
+        <main>
+            <header class="page-heading">
+                <p class="eyebrow">Fundamentos da web</p>
+                <h1>HTML, CSS e JavaScript</h1>
+                <p>Três tecnologias trabalham juntas para dar estrutura, apresentação e comportamento às páginas da Internet.</p>
+            </header>
+
+            <article class="lesson">
+                <section class="lesson-section">
+                    <div>
+                        <h2>Estrutura com HTML</h2>
+                        <p>O HTML utiliza marcações semânticas para organizar títulos, textos, imagens, listas e formulários. Elementos como "header", "nav" e "main" ajudam navegadores e tecnologias assistivas a compreender o conteúdo.</p>
+                        <p>Uma boa estrutura melhora a leitura, a navegação por teclado e a indexação do documento pelos mecanismos de busca.</p>
+                    </div>
+                    <figure>
+                        <img src="../assets/images/Html.jpg" alt="Imagem de códigos feitos em HTML, com tags e atributos">
+                        <figcaption>Figura 1 — HTML fornece a estrutura das páginas web.</figcaption>
+                    </figure>
+                </section>
+
+                <section class="lesson-section reverse">
+                    <div>
+                        <h2>Estilo com CSS</h2>
+                        <p>O CSS define cores, espaçamentos, tipografia e posição dos elementos. Com regras responsivas, o mesmo conteúdo pode ser apresentado de forma adequada em celulares, tablets e computadores.</p>
+                        <p>Boas práticas incluem contraste de cores, áreas de interação visíveis e tamanho de fonte ajustável.</p>
+                    </div>
+                    <figure>
+                        <img src="../assets/images/css.jpg" alt="Imagem de códigos feitos em CSS, com regras e seletores">
+                        <figcaption>Figura 2 — CSS organiza a aparência e o comportamento visual.</figcaption>
+                    </figure>
+                </section>
+                <section class="lesson-section">
+                    <div>
+                        <h2>Interatividade com JavaScript</h2>
+                        <p>O JavaScript adiciona comportamento dinâmico às páginas, permitindo responder a ações do usuário, validar formulários e atualizar conteúdo sem recarregar a página.</p>
+                        <p>Boas práticas incluem o uso de eventos semânticos, tratamento de erros e manutenção de código organizado.</p>
+                    </div>
+                    <figure>
+                        <img src="../assets/images/javascript.jpg" alt="Imagem de códigos feitos em JavaScript, com funções e variáveis">
+                        <figcaption>Figura 3 — JavaScript torna as páginas web interativas.</figcaption>
+                    </figure>
+                </section>
+            </article>
+        </main>
+    </div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

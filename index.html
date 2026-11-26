@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dashboard acessível sobre HTML, CSS e JavaScript">
+    <title>Web em Foco | Dashboard Acessível</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Página inicial do Web em Foco">Web em <span>Foco</span></a>
+            <div class="controls" aria-label="Controles de acessibilidade">
+                <button type="button" onclick="AumentarFonte()" aria-label="Aumentar tamanho da fonte">A+</button>
+                <button type="button" onclick="DiminuirFonte()" aria-label="Diminuir tamanho da fonte">A-</button>
+                <button type="button" onclick="ToggleContraste()" aria-label="Alternar alto contraste">Contraste🎨</button>
+                <button type="button" onclick="LerPagina()" aria-label="Ler esta página">Ouvir🎤</button>
+                <button type="button" onclick="PararLeitura()" aria-label="Parar leitura">Parar🛑</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav aria-label="Menu principal">
+            <a class="active" href="index.html" aria-current="page">Início</a>
+            <a href="pages/conteudo.html">Conteúdo</a>
+            <a href="pages/atividades.html">Atividades</a>
+            <a href="pages/perfil.html">Perfil</a>
+        </nav>
+
+        <main>
+            <section class="hero">
+                <p class="eyebrow">Aprendizagem web</p>
+                <h1>Construa páginas para todas as pessoas</h1>
+                <p>Um guia prático sobre HTML, CSS e JavaScript com foco em semântica, responsividade e acessibilidade.</p>
+                <a class="button" href="pages/conteudo.html">Explorar conteúdo</a>
+            </section>
+
+            <section class="cards" aria-label="Destaques do projeto">
+                <article class="card">
+                    <span class="card-number">01</span>
+                    <h2>HTML semântico</h2>
+                    <p>Estruture documentos claros com elementos que representam corretamente o significado do conteúdo.</p>
+                </article>
+                <article class="card">
+                    <span class="card-number">02</span>
+                    <h2>CSS responsivo</h2>
+                    <p>Organize layouts flexíveis que se adaptam a diferentes telas, tamanhos de fonte e preferências.</p>
+                </article>
+                <article class="card">
+                    <span class="card-number">03</span>
+                    <h2>JavaScript interativo</h2>
+                    <p>Adicione validações, feedback imediato e recursos de acessibilidade para melhorar a experiência.</p>
+                </article>
+            </section>
+        </main>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

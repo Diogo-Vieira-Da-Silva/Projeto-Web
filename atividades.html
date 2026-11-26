@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades | Web em Foco</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/atividades.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="brand" href="../index.html">Web em <span>Foco</span></a>
+            <div class="controls" aria-label="Controles de acessibilidade">
+                <button type="button" onclick="AumentarFonte()" aria-label="Aumentar tamanho da fonte">A+</button>
+                <button type="button" onclick="DiminuirFonte()" aria-label="Diminuir tamanho da fonte">A-</button>
+                <button type="button" onclick="ToggleContraste()" aria-label="Alternar alto contraste">Contraste🎨</button>
+                <button type="button" onclick="LerPagina()" aria-label="Ler esta página">Ouvir🎤</button>
+                <button type="button" onclick="PararLeitura()" aria-label="Parar leitura">Parar🛑</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav aria-label="Menu principal">
+            <a href="../index.html">Início</a>
+            <a href="conteudo.html">Conteúdo</a>
+            <a class="active" href="atividades.html" aria-current="page">Atividades</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+
+        <main>
+            <header class="quiz-heading">
+                <p class="eyebrow">Teste seus conhecimentos</p>
+                <h1>Atividades sobre desenvolvimento web</h1>
+                <p>Escolha uma alternativa em cada pergunta e confira seu resultado.</p>
+            </header>
+
+            <form id="atividadeForm" class="quiz">
+                <fieldset>
+                    <legend>1. Qual linguagem define a estrutura de uma página web?</legend>
+                    <label><input type="radio" name="q1" value="a"> HTML</label>
+                    <label><input type="radio" name="q1" value="b"> CSS</label>
+                    <label><input type="radio" name="q1" value="c"> JavaScript</label>
+                </fieldset>
+                <fieldset>
+                    <legend>2. Qual linguagem é responsável pela apresentação visual?</legend>
+                    <label><input type="radio" name="q2" value="a"> HTML</label>
+                    <label><input type="radio" name="q2" value="b"> CSS</label>
+                    <label><input type="radio" name="q2" value="c"> SQL</label>
+                </fieldset>
+                <fieldset>
+                    <legend>3. Para qual finalidade o JavaScript é usado no navegador?</legend>
+                    <label><input type="radio" name="q3" value="a"> Criar a base textual</label>
+                    <label><input type="radio" name="q3" value="b"> Aplicar cores e fontes</label>
+                    <label><input type="radio" name="q3" value="c"> Implementar interações</label>
+                </fieldset>
+                <fieldset>
+                    <legend>4. Qual elemento representa o conteúdo principal da página?</legend>
+                    <label><input type="radio" name="q4" value="a"> &lt;main&gt;</label>
+                    <label><input type="radio" name="q4" value="b"> &lt;footer&gt;</label>
+                    <label><input type="radio" name="q4" value="c"> &lt;aside&gt;</label>
+                </fieldset>
+                <fieldset>
+                    <legend>5. Qual recurso ajuda a criar um layout adaptável?</legend>
+                    <label><input type="radio" name="q5" value="a"> Media queries</label>
+                    <label><input type="radio" name="q5" value="b"> Cookies</label>
+                    <label><input type="radio" name="q5" value="c"> Banco de dados</label>
+                </fieldset>
+                <button type="submit" class="button-submit">Verificar respostas</button>
+            </form>
+            <div id="mensagem" class="quiz-result" role="status" aria-live="polite"></div>
+        </main>
+    </div>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/atividades.js"></script>
+</body>
+</html>
+
